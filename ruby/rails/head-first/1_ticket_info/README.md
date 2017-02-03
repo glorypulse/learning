@@ -28,3 +28,13 @@ Modify the Title of sead_id_seq
 # => edit view files
 bundle exec rails server
 ```
+
+Add a new column 'phone' in tickets table
+```
+ bundle exec rails generate migration AddPhoneToTickets phone:string
+ # => created a migration code
+ bundle exec rake db:migrate
+ # => added 'phone' column in tickets table
+ # => edit view files, controller file
+ bundle exec rails server
+ ```
