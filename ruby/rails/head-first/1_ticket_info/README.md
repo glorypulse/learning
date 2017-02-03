@@ -5,6 +5,7 @@
 - sqlite3
 
 ### A Lisf of Execution Commands
+Make First application.
 ```
 bundle init
 # edit Gemfile: add rails
@@ -20,4 +21,10 @@ bundle exec rake db:migrate
 # => created a ticket table in DB
 bundle exec rails server
 # => started tickets application! : http://localhost:3000/tickets
+```
+
+Modify the Title of sead_id_seq
+```
+# => edit view files
+bundle exec rails server
 ```
