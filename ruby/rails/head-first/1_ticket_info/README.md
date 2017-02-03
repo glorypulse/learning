@@ -38,3 +38,10 @@ Add a new column 'phone' in tickets table
  # => edit view files, controller file
  bundle exec rails server
  ```
+
+Add a Event Record
+```
+bundle exec rails generate scaffold Event artist:string description:text price_low:decimal price_high:decimal event_date:date
+# => created Event view, controller, model
+
+```
