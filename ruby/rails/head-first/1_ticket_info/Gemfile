@@ -1,0 +1,5 @@
+# Head First Rails Chap.1 Sold Ticket Information
+source "https://rubygems.org"
+
+# basic
+gem "rails"
