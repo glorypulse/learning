@@ -16,4 +16,6 @@ bundle exec rails start
 # => started sample application
 bundle exec rails generate scaffold ticket name:string seat_id_seq:string address:text price_paid:decimal email_address:string
 # => created a view, a controller, a model and a migration for ticket
+bundle exec rake db:migrate
+# => created a ticket table in DB
 ```
