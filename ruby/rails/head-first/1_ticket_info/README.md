@@ -43,5 +43,7 @@ Add a Event Record
 ```
 bundle exec rails generate scaffold Event artist:string description:text price_low:decimal price_high:decimal event_date:date
 # => created Event view, controller, model
-
+bundle exec rake db:migrate
+# => edit view files
+bundle exec rails server
 ```
