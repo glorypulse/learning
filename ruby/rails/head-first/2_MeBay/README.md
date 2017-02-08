@@ -17,6 +17,7 @@ bundle exec rails generate model ad name:string description:text price:decimal s
 bundle exec rake db:migrate
 bundle exec rails generate controller ads
 ```
+
 Replace db/development.sqlite3 from http://www.headfirstlabs.com/books/hfrails/
 - I need exporting data and importing data because of the difference of the versions of sqlite.
 
@@ -37,5 +38,11 @@ Make First views.
 ```
 # create app/views/show.html.erb
 # edit config/routes.rb
+bundle exec rails server
+```
+
+Show data in views.
+```
+# edit controller, view
 bundle exec rails server
 ```
