@@ -32,3 +32,10 @@ sqlite> .import head-first.txt ads
 sqlite> .quit
 cd ../
 ```
+
+Make First views.
+```
+# create app/views/show.html.erb
+# edit config/routes.rb
+bundle exec rails server
+```
