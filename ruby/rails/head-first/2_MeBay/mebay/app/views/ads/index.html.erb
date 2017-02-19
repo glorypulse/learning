@@ -1,0 +1,12 @@
+<html>
+<head>
+  <title>All Ads</title>
+</head>
+<body>
+  <ul>
+    <% @ads.each do |ad| %>
+    <li><a href="<%=ad_path(id: ad.id)%>"><%= ad.name %></a></li>
+    <% end %>
+  </ul>
+</body>
+</html>
