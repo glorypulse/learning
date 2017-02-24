@@ -54,3 +54,11 @@ Show index of ads.
 bundle exec rails server
 # => access http://localhost:3000/ads
 ```
+
+Make custom views
+```
+# => download styles:chap2_hfrails_code_stylesheets_and_images.zip
+# => rename default.css to ad.css
+# => create view layouts/ads, edit views ads
+bundle exec rails server
+```
