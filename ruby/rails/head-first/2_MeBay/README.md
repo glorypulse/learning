@@ -62,3 +62,16 @@ Make custom views
 # => create view layouts/ads, edit views ads
 bundle exec rails server
 ```
+
+# Head First Rails Chapter 3
+Continue developing the previous chapter application "Mebay"!
+
+### A Lisf of Execution Commands
+Add the create function.
+```
+# => edit config/routes
+# => create app/views/ads/new.html.erb
+# => edit app/controllers/ads_controller
+bundle exec rails server
+# => it doesn't work... we need 'create'.
+```
