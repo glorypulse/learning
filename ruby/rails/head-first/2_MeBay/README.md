@@ -71,7 +71,12 @@ Add the create function.
 ```
 # => edit config/routes
 # => create app/views/ads/new.html.erb
-# => edit app/controllers/ads_controller
+# => edit app/controllers/ads_controller#new
 bundle exec rails server
+Ctrl-C
 # => it doesn't work... we need 'create'.
+# => edit config/routes
+# => create app/views/ads/create.html.erb
+# => edit app/controllers/ads_controller#create
+bundle exec rails server
 ```

@@ -1,22 +1,22 @@
 <h1>New ad</h1>
-<% form_for(@ad, url: { action: :create }) do |f| %>
+<%= form_for(@ad, url: { action: :create }) do |f| %>
 <p>
-  <b>Name:</b> <%= f.text_field :name %>
+  <b>Name:</b><br> <%= f.text_field :name %>
 </p>
 <p>
-  <b>Description:</b> <%= f.text_area :description %>
+  <b>Description:</b><br> <%= f.text_area :description %>
 </p>
 <p>
-  <b>Price:</b> <%= f.text_field :price %>
+  <b>Price:</b><br> <%= f.text_field :price %>
 </p>
 <p>
-  <b>Seller Id:</b> <%= f.text_field :seller_id %>
+  <b>Seller Id:</b><br> <%= f.text_field :seller_id %>
 </p>
 <p>
-  <b>Email:</b> <%= f.text_field :email %>
+  <b>Email:</b><br> <%= f.text_field :email %>
 </p>
 <p>
-  <b>Img url:</b> <%= f.text_field :img_url %>
+  <b>Img url:</b><br> <%= f.text_field :img_url %>
 </p>
 <%= f.submit "Create" %>
 </p>
