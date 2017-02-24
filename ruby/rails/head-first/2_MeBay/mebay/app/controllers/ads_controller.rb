@@ -6,6 +6,7 @@ class AdsController < ApplicationController
   def create
     @ad = Ad.new(ad_params)
     @ad.save
+    redirect_to ad_path(@ad)
   end
 
   def index

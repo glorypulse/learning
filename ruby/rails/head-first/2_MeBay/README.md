@@ -80,3 +80,8 @@ Ctrl-C
 # => edit app/controllers/ads_controller#create
 bundle exec rails server
 ```
+
+Add redirect
+```
+# => edit app/controllers/ads_controller#create
+```
