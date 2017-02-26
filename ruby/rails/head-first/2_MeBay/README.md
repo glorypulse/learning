@@ -84,6 +84,7 @@ bundle exec rails server
 Add redirect
 ```
 # => edit app/controllers/ads_controller#create
+bundle exec rails server
 ```
 
 Add edit, update
@@ -91,4 +92,11 @@ Add edit, update
 # => edit config/routes
 # => create app/views/ads/edit.html.erb (add _form.html.erb)
 # => edit app/controllers/ads_controller#edit, update
+bundle exec rails server
+```
+
+Add Authentication
+```
+# => edit app/controllers/ads_controller
+bundle exec rails server
 ```
