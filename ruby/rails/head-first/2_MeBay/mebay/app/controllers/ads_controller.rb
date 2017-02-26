@@ -17,6 +17,16 @@ class AdsController < ApplicationController
     @ad = Ad.find(params[:id])
   end
 
+  def edit
+    @ad = Ad.find(params[:id])
+  end
+
+  def update
+    @ad = Ad.find(params[:id])
+    @ad.update(ad_params)
+    redirect_to ad_path(@ad)
+  end
+
   def ad_params
     params.require(:ad).permit(:name, :description, :price, :seller_id, :email, :img_url)
   end

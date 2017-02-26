@@ -85,3 +85,10 @@ Add redirect
 ```
 # => edit app/controllers/ads_controller#create
 ```
+
+Add edit, update
+```
+# => edit config/routes
+# => create app/views/ads/edit.html.erb (add _form.html.erb)
+# => edit app/controllers/ads_controller#edit, update
+```
