@@ -100,3 +100,12 @@ Add Authentication
 # => edit app/controllers/ads_controller
 bundle exec rails server
 ```
+
+Add delete
+```
+# => edit config/routes
+# => edit app/views/layouts/ads (add csrf_meta_tags, js)
+# => edit app/views/ads/index
+# => edit app/controllers/ads_controller#destroy
+bundle exec rails server
+```

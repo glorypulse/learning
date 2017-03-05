@@ -2,6 +2,7 @@
   <ul>
     <% @ads.each do |ad| %>
     <li><a href="<%=ad_path(id: ad.id)%>"><%= ad.name %></a>
+      [ <%= link_to 'Delete', ad, method: :delete, data: { confirm: 'Are you sure?' } %> ]
     </li>
     <% end %>
   </ul>
