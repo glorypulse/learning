@@ -1,12 +1,9 @@
-<html>
-<head>
-  <title>All Ads</title>
-</head>
-<body>
+<h1>All Ads.</h1>
   <ul>
     <% @ads.each do |ad| %>
-    <li><a href="<%=ad_path(id: ad.id)%>"><%= ad.name %></a></li>
+    <li><a href="<%=ad_path(id: ad.id)%>"><%= ad.name %></a>
+      [ <%= link_to 'Delete', ad, method: :delete, data: { confirm: 'Are you sure?' } %> ]
+    </li>
     <% end %>
   </ul>
-</body>
-</html>
+<p><a href="<%= new_ad_path %>">Add New Ad</a></a>

@@ -54,3 +54,58 @@ Show index of ads.
 bundle exec rails server
 # => access http://localhost:3000/ads
 ```
+
+Make custom views
+```
+# => download styles:chap2_hfrails_code_stylesheets_and_images.zip
+# => rename default.css to ad.css
+# => create view layouts/ads, edit views ads
+bundle exec rails server
+```
+
+# Head First Rails Chapter 3
+Continue developing the previous chapter application "Mebay"!
+
+### A Lisf of Execution Commands
+Add the create function.
+```
+# => edit config/routes
+# => create app/views/ads/new.html.erb
+# => edit app/controllers/ads_controller#new
+bundle exec rails server
+Ctrl-C
+# => it doesn't work... we need 'create'.
+# => edit config/routes
+# => create app/views/ads/create.html.erb
+# => edit app/controllers/ads_controller#create
+bundle exec rails server
+```
+
+Add redirect
+```
+# => edit app/controllers/ads_controller#create
+bundle exec rails server
+```
+
+Add edit, update
+```
+# => edit config/routes
+# => create app/views/ads/edit.html.erb (add _form.html.erb)
+# => edit app/controllers/ads_controller#edit, update
+bundle exec rails server
+```
+
+Add Authentication
+```
+# => edit app/controllers/ads_controller
+bundle exec rails server
+```
+
+Add delete
+```
+# => edit config/routes
+# => edit app/views/layouts/ads (add csrf_meta_tags, js)
+# => edit app/views/ads/index
+# => edit app/controllers/ads_controller#destroy
+bundle exec rails server
+```
